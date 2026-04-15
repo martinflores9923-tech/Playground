@@ -1,0 +1,23 @@
+{
+  "name": "pacific-services-cleaning",
+  "version": "1.0.0",
+  "description": "Pacific Services Cleaning marketing website with contact form email delivery",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "cleaning services",
+    "small business",
+    "seo",
+    "contact form"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14"
+  }
+}

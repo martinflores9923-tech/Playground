@@ -1,0 +1,11 @@
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" fill="#EFFAF7"/>
+  <rect x="80" y="80" width="740" height="440" rx="30" fill="#FFFFFF"/>
+  <rect x="150" y="150" width="220" height="300" rx="20" fill="#49C39E" fill-opacity="0.25"/>
+  <rect x="400" y="150" width="350" height="28" rx="14" fill="#176B87" fill-opacity="0.22"/>
+  <rect x="400" y="200" width="300" height="22" rx="11" fill="#176B87" fill-opacity="0.18"/>
+  <rect x="400" y="242" width="280" height="22" rx="11" fill="#176B87" fill-opacity="0.14"/>
+  <circle cx="260" cy="300" r="70" fill="#1F9D7A"/>
+  <text x="400" y="315" fill="#0B3C5D" font-family="Arial, sans-serif" font-size="42" font-weight="700">Residential Cleaning</text>
+  <text x="400" y="360" fill="#176B87" font-family="Arial, sans-serif" font-size="24">Sample Service Image</text>
+</svg>
