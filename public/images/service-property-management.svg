@@ -1,0 +1,11 @@
+<svg width="900" height="540" viewBox="0 0 900 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="540" rx="24" fill="#EAF0F7"/>
+  <rect x="86" y="86" width="728" height="368" rx="20" fill="#FFFFFF"/>
+  <rect x="130" y="132" width="90" height="248" rx="10" fill="#1B3A5A"/>
+  <rect x="235" y="110" width="110" height="270" rx="10" fill="#345D84"/>
+  <rect x="360" y="148" width="86" height="232" rx="10" fill="#5F82A5"/>
+  <rect x="470" y="170" width="280" height="34" rx="17" fill="#1B3A5A" fill-opacity="0.24"/>
+  <rect x="470" y="225" width="250" height="25" rx="12" fill="#1B3A5A" fill-opacity="0.16"/>
+  <rect x="470" y="266" width="220" height="25" rx="12" fill="#1B3A5A" fill-opacity="0.12"/>
+  <text x="470" y="350" fill="#0F2742" font-size="35" font-family="Arial" font-weight="700">Property Management</text>
+</svg>

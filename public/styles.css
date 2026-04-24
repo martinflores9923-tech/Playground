@@ -1,14 +1,17 @@
 :root {
-  --blue-900: #0b3c5d;
-  --blue-700: #176b87;
-  --green-600: #1f9d7a;
-  --green-400: #49c39e;
+  --navy-950: #051a32;
+  --navy-900: #0f2742;
+  --navy-800: #1b3a5a;
+  --steel-700: #345d84;
+  --steel-500: #5f82a5;
+  --mist-100: #eff2f6;
+  --mist-200: #e2e8ef;
+  --paper: #f8f9fc;
   --white: #ffffff;
-  --slate-100: #eef5f8;
-  --text: #103244;
+  --text: #1f2f43;
   --max-width: 1100px;
   --radius: 14px;
-  --shadow: 0 12px 28px rgba(16, 50, 68, 0.12);
+  --shadow: 0 14px 30px rgba(8, 29, 55, 0.12);
 }
 
 * {
@@ -17,10 +20,10 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', 'Avenir Next', 'Segoe UI', sans-serif;
   color: var(--text);
   line-height: 1.6;
-  background: linear-gradient(180deg, #f8fdff 0%, #f3fbf8 100%);
+  background: linear-gradient(180deg, #f3f4f8 0%, #e9edf3 100%);
 }
 
 .container {
@@ -29,11 +32,12 @@ body {
 }
 
 .site-header {
-  background: var(--white);
+  background: rgba(248, 249, 252, 0.95);
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid #d9ebf0;
+  border-bottom: 1px solid #d4dde8;
+  backdrop-filter: blur(8px);
 }
 
 .nav-wrap {
@@ -44,24 +48,32 @@ body {
 }
 
 .brand {
-  color: var(--blue-900);
+  color: var(--navy-900);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   font-size: 1.05rem;
 }
 
 .site-nav a {
   text-decoration: none;
-  color: var(--blue-700);
+  color: var(--steel-700);
   margin-left: 1rem;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.site-nav a:hover {
+  color: var(--navy-900);
 }
 
 .hero {
   padding: 4rem 0 3rem;
   background:
-    radial-gradient(circle at 10% 20%, rgba(73, 195, 158, 0.2), transparent 38%),
-    radial-gradient(circle at 90% 10%, rgba(23, 107, 135, 0.18), transparent 36%);
+    linear-gradient(180deg, rgba(243, 244, 248, 0.78), rgba(233, 237, 243, 0.85)),
+    url('./images/hero-background.jpg') center / cover no-repeat,
+    radial-gradient(circle at 8% 18%, rgba(95, 130, 165, 0.22), transparent 38%),
+    radial-gradient(circle at 90% 8%, rgba(27, 58, 90, 0.2), transparent 36%);
 }
 
 .hero-grid {
@@ -76,7 +88,7 @@ body {
   letter-spacing: 0.1em;
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--green-600);
+  color: var(--steel-700);
 }
 
 h1,
@@ -84,6 +96,7 @@ h2,
 h3 {
   line-height: 1.2;
   margin-top: 0;
+  color: var(--navy-900);
 }
 
 h1 {
@@ -95,6 +108,21 @@ h1 {
   max-width: 58ch;
 }
 
+.brand-logo-block {
+  margin: 0 0 1rem;
+  max-width: 420px;
+}
+
+.brand-logo-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  border: 1px solid #cfd9e6;
+  background: #f6f7fa;
+}
+
 .media-block {
   margin: 1.2rem 0 0;
 }
@@ -104,7 +132,7 @@ h1 {
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  border: 1px solid #d5e9f0;
+  border: 1px solid #d1d9e4;
 }
 
 .service-media,
@@ -114,7 +142,7 @@ h1 {
 
 .cta {
   display: inline-block;
-  background: linear-gradient(90deg, var(--green-600), var(--blue-700));
+  background: linear-gradient(90deg, var(--navy-900), var(--steel-700));
   color: var(--white);
   border: none;
   border-radius: 999px;
@@ -129,6 +157,7 @@ h1 {
   border-radius: var(--radius);
   padding: 1.4rem;
   box-shadow: var(--shadow);
+  border: 1px solid #d8e0ea;
 }
 
 .hero-card ul {
@@ -141,7 +170,7 @@ h1 {
 }
 
 .section-alt {
-  background: var(--slate-100);
+  background: var(--mist-100);
 }
 
 .cards {
@@ -152,10 +181,40 @@ h1 {
 
 .card {
   background: var(--white);
-  border-left: 4px solid var(--green-400);
+  border-left: 4px solid var(--steel-500);
   border-radius: var(--radius);
   padding: 1rem;
   box-shadow: var(--shadow);
+  border-top: 1px solid #dbe2eb;
+}
+
+.service-card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  border: 1px solid #d3dbe6;
+  background: #edf2f8;
+}
+
+.industry-list {
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.industry-list li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--steel-700);
+}
+
+a:hover {
+  color: var(--navy-900);
 }
 
 .contact-wrap {
@@ -165,7 +224,7 @@ h1 {
 }
 
 .contact-form {
-  background: var(--white);
+  background: var(--paper);
   padding: 1.2rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -177,16 +236,17 @@ h1 {
 .contact-form select,
 .contact-form textarea {
   padding: 0.7rem;
-  border: 1px solid #c7dce4;
+  border: 1px solid #c2cfdd;
   border-radius: 8px;
   font: inherit;
+  background: #ffffff;
 }
 
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: var(--green-600);
-  outline: 2px solid rgba(31, 157, 122, 0.24);
+  border-color: var(--steel-700);
+  outline: 2px solid rgba(52, 93, 132, 0.24);
 }
 
 .form-status {
@@ -197,7 +257,7 @@ h1 {
 }
 
 .site-footer {
-  background: var(--blue-900);
+  background: linear-gradient(90deg, var(--navy-950), var(--navy-900));
   color: var(--white);
   padding: 1rem 0;
   text-align: center;
@@ -212,6 +272,14 @@ h1 {
   .service-media,
   .about-media {
     max-width: 100%;
+  }
+
+  .brand-logo-block {
+    max-width: 100%;
+  }
+
+  .industry-list {
+    columns: 1;
   }
 
   .site-nav {

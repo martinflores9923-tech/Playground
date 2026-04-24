@@ -1,0 +1,22 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCE4EE"/>
+      <stop offset="1" stop-color="#C8D5E3"/>
+    </linearGradient>
+    <linearGradient id="building" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2E557E"/>
+      <stop offset="1" stop-color="#0D2541"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1300" cy="210" r="170" fill="#EAF0F6"/>
+  <rect x="1020" y="290" width="72" height="260" rx="8" fill="url(#building)"/>
+  <rect x="1110" y="220" width="84" height="330" rx="8" fill="url(#building)"/>
+  <rect x="1210" y="180" width="96" height="370" rx="8" fill="url(#building)"/>
+  <rect x="1324" y="240" width="88" height="310" rx="8" fill="url(#building)"/>
+  <rect x="1428" y="300" width="72" height="250" rx="8" fill="url(#building)"/>
+  <path d="M0 600C170 540 350 530 520 575C690 620 850 710 1030 685C1180 665 1330 575 1600 620V900H0V600Z" fill="#2D5D8F"/>
+  <path d="M0 650C180 600 340 600 520 640C700 680 860 760 1030 735C1220 705 1380 620 1600 655V900H0V650Z" fill="#1B3A5A"/>
+  <path d="M0 695C180 655 360 675 520 710C700 748 865 812 1030 790C1230 760 1380 680 1600 710V900H0V695Z" fill="#0F2742"/>
+</svg>
