@@ -18,7 +18,7 @@
     />
     <meta name="author" content="Pacific Services Cleaning" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.pacificservicescleaning.com/" />
+    <link rel="canonical" href="https://pacificservicesenterprises.com/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Pacific Services Cleaning" />
@@ -26,7 +26,7 @@
       property="og:description"
       content="Reliable commercial cleaning services across Sonoma and Marin County. Contact Pacific Services Cleaning for a custom quote."
     />
-    <meta property="og:url" content="https://www.pacificservicescleaning.com/" />
+    <meta property="og:url" content="https://pacificservicesenterprises.com/" />
     <meta property="og:site_name" content="Pacific Services Cleaning" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -43,7 +43,7 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Pacific Services Cleaning",
-        "url": "https://www.pacificservicescleaning.com",
+        "url": "https://pacificservicesenterprises.com",
         "description": "Family-owned commercial cleaning services for Sonoma and Marin County.",
         "telephone": "+1-707-582-0107",
         "email": "Irvin@PacificServicesEnt.com",
@@ -63,8 +63,16 @@
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a href="#top" class="brand">Pacific Services Cleaning</a>
-        <nav class="site-nav" aria-label="Primary">
+        <a href="#top" class="brand">
+          <img src="./pacific-services-logo.PNG" alt="Pacific Services Enterprises logo" class="brand-icon" loading="eager" />
+          <span>Pacific Services Enterprises</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Primary">
           <a href="#services">Services</a>
           <a href="#about">About</a>
           <a href="#service-area">Service Area</a>
@@ -91,7 +99,12 @@
               Family-owned and operated in Rohnert Park, California, we proudly serve Sonoma and Marin
               County with dependable commercial cleaning tailored to your facility and budget.
             </p>
-            <a href="#contact" class="cta">Request A Free Quote</a>
+            <div class="hero-actions">
+              <a href="#contact" class="cta">Request A Free Quote</a>
+              <a href="tel:+17075820107" class="cta cta-secondary" aria-label="Call Pacific Services Enterprises now">
+                Call Now
+              </a>
+            </div>
             <!-- <figure class="media-block">
               <img
                 src="./images/hero-cleaning-team.svg"
@@ -105,6 +118,7 @@
             <ul>
               <li>Business license: Lic. #LO971756</li>
               <li>Bonded and insured</li>
+              <li>California DIR registered janitorial services provider</li>
               <li>35+ years of industry experience since 1990</li>
               <li>Family-owned with long-term client relationships</li>
             </ul>
@@ -183,7 +197,7 @@
               <h3>Post-Construction Cleaning</h3>
               <p>Final cleanup that leaves new or renovated spaces polished and ready for business.</p>
             </article>
-            <article class="card">
+            <article class="card featured-service">
               <img
                 class="service-card-image"
                 src="./images/property-management.jpg"
@@ -194,35 +208,6 @@
               <p>Consistent cleaning support for single or multi-property portfolios across your schedule.</p>
             </article>
           </div>
-        </div>
-      </section>
-
-      <section id="about" class="section section-alt">
-        <div class="container">
-          <h2>About Pacific Services Cleaning</h2>
-          <figure class="media-block about-media">
-            <img
-              src="./images/company-about.svg"
-              alt="Pacific Services Cleaning company sample image"
-              loading="lazy"
-            />
-          </figure>
-          <p>
-            We are a family-owned and operated commercial cleaning company based in Rohnert Park,
-            California. Our roots go back to 1990, when our uncle Filiberto built the business with a
-            simple commitment: deliver reliable, detail-oriented cleaning services businesses can trust.
-          </p>
-          <p>
-            When Filiberto retired in 2015, he passed the business down to our family. Today the company
-            is run by Ramon and Rosario, along with their children Ivonne and Irvin. Many team members are
-            family, and we treat every account with the same care and consistency we would give our own
-            facility.
-          </p>
-          <p>
-            Over the years, we have built lasting client relationships through consistent service, clear
-            communication, and dependable follow-through. We believe great service goes beyond cleaning,
-            it means being a partner you can rely on.
-          </p>
         </div>
       </section>
 
@@ -247,16 +232,45 @@
         </div>
       </section>
 
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <h2>About Pacific Services Enterprises</h2>
+          <figure class="media-block about-media">
+            <img
+              src="./pacific-services-logo.PNG"
+              alt="Pacific Services Enterprises company logo"
+              loading="lazy"
+            />
+          </figure>
+          <p>
+            We are a family-owned and operated commercial cleaning company based in Rohnert Park,
+            California. Our roots go back to 1990, when our uncle Filiberto built the business with a
+            simple commitment: deliver reliable, detail-oriented cleaning services businesses can trust.
+          </p>
+          <p>
+            When Filiberto retired in 2015, he passed the business down to our family. Today the company
+            is run by Ramon and Rosario, along with their children Ivonne and Irvin. Many team members are
+            family, and we treat every account with the same care and consistency we would give our own
+            facility.
+          </p>
+          <p>
+            Over the years, we have built lasting client relationships through consistent service, clear
+            communication, and dependable follow-through. We believe great service goes beyond cleaning,
+            it means being a partner you can rely on.
+          </p>
+        </div>
+      </section>
+
       <section id="contact" class="section">
         <div class="container contact-wrap">
           <div>
             <h2>Get In Touch</h2>
-            <p>Tell us about your cleaning needs and we will send you a custom quote.</p>
-            <p><strong>Manager</strong></p>
-            <p><strong>Ivonne:</strong> <a href="tel:+17074906879">(707) 490-6879</a></p>
+            <p>Call us directly or fill out the form below, and our team will get back to you with a custom quote.</p>
+            <p><strong>Manager: Ivonne</strong></p>
+            <p><strong>Phone:</strong> <a href="tel:+17074906879">(707) 490-6879</a></p>
             <p><strong>Email:</strong> <a href="mailto:Services_Pacific@Yahoo.com">Services_Pacific@Yahoo.com</a></p>
-            <p><strong>Supervisor</strong></p>
-            <p><strong>Irvin:</strong> <a href="tel:+17075820107">(707) 582-0107</a></p>
+            <p><strong>Supervisor: Irvin</strong></p>
+            <p><strong>Phone:</strong> <a href="tel:+17075820107">(707) 582-0107</a></p>
             <p><strong>Email:</strong> <a href="mailto:Irvin@PacificServicesEnt.com">Irvin@PacificServicesEnt.com</a></p>
           </div>
 
@@ -294,7 +308,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; <span id="year"></span> Pacific Services Cleaning. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Pacific Services Enterprises. All rights reserved.</p>
       </div>
     </footer>
 

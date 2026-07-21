@@ -2,8 +2,24 @@ const form = document.querySelector('#contactForm');
 const formStatus = document.querySelector('#formStatus');
 const year = document.querySelector('#year');
 const contactEndpoint = '/api/contact';
+const menuToggle = document.querySelector('#menuToggle');
+const siteNav = document.querySelector('#siteNav');
 
 year.textContent = new Date().getFullYear();
+
+if (menuToggle && siteNav) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = siteNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  siteNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      siteNav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
 
 if (form) {
   form.addEventListener('submit', async (event) => {
