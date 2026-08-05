@@ -8,15 +8,36 @@ const siteNav = document.querySelector('#siteNav');
 year.textContent = new Date().getFullYear();
 
 if (menuToggle && siteNav) {
+  const dropdown = siteNav.querySelector('.nav-dropdown');
+  const dropdownToggle = dropdown ? dropdown.querySelector('.nav-dropdown-toggle') : null;
+  const isMobileNav = () => window.matchMedia('(max-width: 860px)').matches;
+
   menuToggle.addEventListener('click', () => {
     const isOpen = siteNav.classList.toggle('open');
     menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
 
+  if (dropdown && dropdownToggle) {
+    dropdownToggle.addEventListener('click', (event) => {
+      if (isMobileNav()) {
+        event.preventDefault();
+        const isOpen = dropdown.classList.toggle('open');
+        dropdownToggle.setAttribute('aria-expanded', String(isOpen));
+      }
+    });
+  }
+
   siteNav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
+      if (link.classList.contains('nav-dropdown-toggle') && isMobileNav()) {
+        return;
+      }
       siteNav.classList.remove('open');
       menuToggle.setAttribute('aria-expanded', 'false');
+      if (dropdown && dropdownToggle) {
+        dropdown.classList.remove('open');
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+      }
     });
   });
 }
