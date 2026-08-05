@@ -55,7 +55,7 @@
           "Carpet Cleaning",
           "Building Maintenance",
           "Post-Construction Cleaning",
-          "Property Management Cleaning"
+          "Janitorial Supplies & Consumables Management"
         ]
       }
     </script>
@@ -73,7 +73,21 @@
           <span></span>
         </button>
         <nav class="site-nav" id="siteNav" aria-label="Primary">
-          <a href="#services">Services</a>
+          <div class="nav-dropdown">
+            <a href="#services" class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Services
+              <span class="dropdown-caret" aria-hidden="true"></span>
+            </a>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="./commercial-cleaning.html" role="menuitem">Commercial Cleaning</a>
+              <a href="./janitorial-services.html" role="menuitem">Janitorial Services</a>
+              <a href="./floor-care.html" role="menuitem">Floor Care</a>
+              <a href="./carpet-cleaning.html" role="menuitem">Carpet Cleaning</a>
+              <a href="./building-maintenance.html" role="menuitem">Building Maintenance</a>
+              <a href="./post-construction-cleaning.html" role="menuitem">Post-Construction Cleaning</a>
+              <a href="./janitorial-supplies.html" role="menuitem">Janitorial Supplies</a>
+            </div>
+          </div>
           <a href="#about">About</a>
           <a href="#service-area">Service Area</a>
           <a href="#contact">Contact</a>
@@ -137,76 +151,97 @@
             />
           </figure> -->
           <div class="cards">
-            <article class="card">
-              <img
-                class="service-card-image"
-                src="./images/janitorial.jpg"
-                alt="Janitorial services"
-                loading="lazy"
-              />
-              <h3>Janitorial Services</h3>
-              <p>Reliable scheduled cleaning for restrooms, break rooms, offices, and common areas.</p>
-            </article>
-            <article class="card">
-              <img
-                class="service-card-image"
-                src="./images/commercial-cleaning.jpg"
-                alt="Commercial cleaning services"
-                loading="lazy"
-              />
-              <h3>Commercial Cleaning</h3>
-              <p>One-time deep cleans or recurring plans tailored to your business goals and budget.</p>
-            </article>
-            <article class="card">
-              <img
-                class="service-card-image"
-                src="./images/floor-care.jpg"
-                alt="Floor care service"
-                loading="lazy"
-              />
-              <h3>Floor Care</h3>
-              <p>Professional strip and wax services to restore shine and protect high-traffic floors.</p>
-            </article>
-            <article class="card">
-              <img
-                class="service-card-image"
-                src="./images/carpet-cleaning.jpg"
-                alt="Carpet cleaning service"
-                loading="lazy"
-              />
-              <h3>Carpet Cleaning</h3>
-              <p>Deep carpet cleaning to remove dirt, stains, and allergens while extending carpet life.</p>
-            </article>
-            <article class="card">
-              <img
-                class="service-card-image"
-                src="./images/building-maintenance.jpg"
-                alt="Building maintenance service"
-                loading="lazy"
-              />
-              <h3>Building Maintenance</h3>
-              <p>Routine inspections and minor repairs to keep your facility operating smoothly.</p>
-            </article>
-            <article class="card">
-              <img
-                class="service-card-image"
-                src="./images/post-construction-cleaning.jpg"
-                alt="Post-construction cleaning service"
-                loading="lazy"
-              />
-              <h3>Post-Construction Cleaning</h3>
-              <p>Final cleanup that leaves new or renovated spaces polished and ready for business.</p>
-            </article>
-            <article class="card featured-service">
-              <img
-                class="service-card-image"
-                src="./images/property-management.jpg"
-                alt="Property management cleaning service"
-                loading="lazy"
-              />
-              <h3>Property Management</h3>
-              <p>Consistent cleaning support for single or multi-property portfolios across your schedule.</p>
-            </article>
+            <a class="card-link" href="./janitorial-services.html">
+              <article class="card">
+                <img
+                  class="service-card-image"
+                  src="./images/janitorial.jpg"
+                  alt="Janitorial services"
+                  loading="lazy"
+                />
+                <h3>Janitorial Services</h3>
+                <p>Reliable scheduled cleaning for restrooms, break rooms, offices, and common areas.</p>
+                <span class="card-cta">Learn More &rarr;</span>
+              </article>
+            </a>
+            <a class="card-link" href="./commercial-cleaning.html">
+              <article class="card">
+                <img
+                  class="service-card-image"
+                  src="./images/commercial-cleaning.jpg"
+                  alt="Commercial cleaning services"
+                  loading="lazy"
+                />
+                <h3>Commercial Cleaning</h3>
+                <p>One-time deep cleans or recurring plans tailored to your business goals and budget.</p>
+                <span class="card-cta">Learn More &rarr;</span>
+              </article>
+            </a>
+            <a class="card-link" href="./floor-care.html">
+              <article class="card">
+                <img
+                  class="service-card-image"
+                  src="./images/floor-care.jpg"
+                  alt="Floor care service"
+                  loading="lazy"
+                />
+                <h3>Floor Care</h3>
+                <p>Professional strip and wax services to restore shine and protect high-traffic floors.</p>
+                <span class="card-cta">Learn More &rarr;</span>
+              </article>
+            </a>
+            <a class="card-link" href="./carpet-cleaning.html">
+              <article class="card">
+                <img
+                  class="service-card-image"
+                  src="./images/carpet-cleaning.jpg"
+                  alt="Carpet cleaning service"
+                  loading="lazy"
+                />
+                <h3>Carpet Cleaning</h3>
+                <p>Deep carpet cleaning to remove dirt, stains, and allergens while extending carpet life.</p>
+                <span class="card-cta">Learn More &rarr;</span>
+              </article>
+            </a>
+            <a class="card-link" href="./building-maintenance.html">
+              <article class="card">
+                <img
+                  class="service-card-image"
+                  src="./images/building-maintenance.jpg"
+                  alt="Building maintenance service"
+                  loading="lazy"
+                />
+                <h3>Building Maintenance</h3>
+                <p>Routine inspections and minor repairs to keep your facility operating smoothly.</p>
+                <span class="card-cta">Learn More &rarr;</span>
+              </article>
+            </a>
+            <a class="card-link" href="./post-construction-cleaning.html">
+              <article class="card">
+                <img
+                  class="service-card-image"
+                  src="./images/post-construction-cleaning.jpg"
+                  alt="Post-construction cleaning service"
+                  loading="lazy"
+                />
+                <h3>Post-Construction Cleaning</h3>
+                <p>Final cleanup that leaves new or renovated spaces polished and ready for business.</p>
+                <span class="card-cta">Learn More &rarr;</span>
+              </article>
+            </a>
+            <a class="card-link featured-service" href="./janitorial-supplies.html">
+              <article class="card">
+                <img
+                  class="service-card-image"
+                  src="./images/property-management.jpg"
+                  alt="Janitorial supplies and consumables management"
+                  loading="lazy"
+                />
+                <h3>Janitorial Supplies &amp; Consumables Management</h3>
+                <p>Inventory monitoring and restocking so your facility never runs out of essential supplies.</p>
+                <span class="card-cta">Learn More &rarr;</span>
+              </article>
+            </a>
           </div>
         </div>
       </section>
@@ -293,7 +328,7 @@
               <option value="Carpet Cleaning">Carpet Cleaning</option>
               <option value="Building Maintenance">Building Maintenance</option>
               <option value="Post-Construction Cleaning">Post-Construction Cleaning</option>
-              <option value="Property Management">Property Management</option>
+              <option value="Janitorial Supplies & Consumables Management">Janitorial Supplies &amp; Consumables Management</option>
             </select>
 
             <label for="message">Message</label>
